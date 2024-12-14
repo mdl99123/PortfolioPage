@@ -1,41 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Portfolio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
-  </head>
-  <body>
-    <header>
-      <h1>Welcome to My Portfolio</h1>
-      <nav>
-        <ul>
-          <li><a href="#about">About Me</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Portfolio - Start Bootstrap Theme</title>
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+         
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
-    <section id="about">
-      <h2>About Me</h2>
-      <p>This is where you introduce yourself.</p>
-    </section>
 
-    <section id="projects">
-      <h2>Projects</h2>
-      <p>Here are some of the projects I've worked on:</p>
-      <!-- Add links to your projects -->
-      <ul>
-        <li><a href="https://github.com/yourusername/project1">Project 1</a></li>
-        <li><a href="https://github.com/yourusername/project2">Project 2</a></li>
-      </ul>
-    </section>
+        <link href="css/styles.css" rel="stylesheet" />
+          <!-- Bootstrap 5 CSS -->
+     <!-- Bootstrap 5 JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Reach out to me at <a href="mailto:yourname@example.com">yourname@example.com</a></p>
-    </section>
-  </body>
+    <script>
+        function toggleCollapse(CollapsibeID, arrowID) {
+            var collapseContent = document.getElementById(CollapsibeID);
+            var arrowIcon = document.getElementById(arrowID);
+            
+            // Toggle collapse
+            collapseContent.classList.toggle('show');
+            
+            // Toggle arrow rotation
+            arrowIcon.classList.toggle('collapsed');
+        }
+    </script>
+
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+                <span class="d-block d-lg-none">Michael Lama </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#Projects">Sample Projects</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!-- Page Content-->
+        <div class="container-fluid p-0">
+            <!-- About-->
+            <section class="resume-section" id="about">
+                <div class="resume-section-content">
+                    <h1 class="mb-0">
+                        Michael Lama
+                        <span class="text-primary"></span>
+                    </h1>
+                    <p class="lead mb-5">
+                       Welcome to my portfolio page. I'm a Data Specialist with a background in Data Science, Cloud Technology, Cybersecurity and Computer Science. Skilled in data-driven decision-making, process automation, and data quality improvement. Proficient in Power BI, SQL, Python, and Azure, with a Master’s in Applied Data Science. Recognized with an EPA award for improving operational efficiency, automating tasks, and enhancing data insights in global cross-functional environments.
+                    </p>
+                    <div class="social-icons">
+                        <a class="social-icon" href="https://www.linkedin.com/in/michael-lama-b30787161" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="social-icon" href="https://github.com/mdl99123/Data-Projects" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </section>
+            <hr class="m-0" />
+            <section class="resume-section" id="Projects">
+                <div class="resume-section-content">
+                    <h2 class="mb-5">Data Science Sample Projects</h2>
+
+                    <div class="container mt-5">
+
+                        <!-- Collapsible Section -->
+                        <div id="collapsibleContainer">
+                            <div class="collapsible-title d-flex justify-content-between" onclick="toggleCollapse('collapsiblePage2','arrowIcon2')">
+                                <h3>Spam & Phishing Detection Models - MSDS Practicum Project</h3>
+                                <i class="bi bi-chevron-down arrow" id="arrowIcon2"></i>
+                            </div>
+                            <!-- Collapsible Content -->
+                            <div class="collapse" id="collapsiblePage2">
+                                <div class="collapsible-content">
+                                    <iframe src="Practicum.html" width="100%" height="500px" frameborder="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container mt-5">
+
+                        <!-- Collapsible Section -->
+                        <div id="collapsibleContainer">
+                            <div class="collapsible-title d-flex justify-content-between" onclick="toggleCollapse('collapsiblePage','arrowIcon')">
+                                <h3>Stock Market Sentiment Analysis Project</h3>
+                                <i class="bi bi-chevron-down arrow" id="arrowIcon"></i>
+                            </div>
+                            <!-- Collapsible Content -->
+                            <div class="collapse" id="collapsiblePage">
+                                <div class="collapsible-content">
+                                    <iframe src="StockProject.html" width="100%" height="500px" frameborder="0"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+          
+
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
 </html>
